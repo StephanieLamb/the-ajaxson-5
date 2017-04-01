@@ -5,13 +5,20 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
 </head>
-<body>
-    <h1>The AJAXson 5</h1>
+<body class="container-fluid">
+    <header class="jumbotron"><h1>The AJAXson 5</h1></header>
+
 
     <form id="form-gif-request" />
         <label>What kind of Jackson 5 related gif do you want?</label>
         <input name="tag" type="text"/>
         <input type="submit" value="Get my Gif!" />
+        <br/>
+        <!-- <div class="row col-xs-12"> -->
+        <label>Prove you're not a robot:</label>
+        <input id="captcha" type="text"/>
+        <label><b> Jacksons are better than One</b></label>
+        <input class="btn btn-primary" type="submit" value="Get my Gif!" />
     </form>
 
     <img id="gif" src="" hidden="true"/>
